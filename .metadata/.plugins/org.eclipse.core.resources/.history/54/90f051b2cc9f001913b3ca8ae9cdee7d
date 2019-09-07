@@ -1,0 +1,15 @@
+package com.automation.test;
+
+import java.io.IOException;
+
+public class Driver {
+
+	public static void main(String[] args) throws InterruptedException, IOException {
+		
+	MR obj = new MR();
+	obj.autoITTest();
+		// TODO Auto-generated method stub
+
+	}
+
+}

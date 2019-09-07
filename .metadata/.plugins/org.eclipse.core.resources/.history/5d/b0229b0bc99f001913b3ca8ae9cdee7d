@@ -1,0 +1,25 @@
+package com.testing.test;
+public class Driver{
+public static void main(String[]args) throws InterruptedException{
+MR obj = new MR();
+obj.browserMercuryAppLaunch();
+obj.loginImplicitWait(); 
+obj.verifyLogin1();
+obj.passengerNo();
+obj.departFrom();
+obj.travelMonth();
+obj.travelDate();
+obj.arriveInCity();
+obj.returnMonth();
+obj.returnDate();
+obj.airlineType();
+obj.clickContinue();
+}
+}
+
+
+
+
+
+
+

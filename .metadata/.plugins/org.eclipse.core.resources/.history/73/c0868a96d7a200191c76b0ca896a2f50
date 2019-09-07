@@ -1,0 +1,49 @@
+package com.automation.test;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MR {
+	
+	 static WebDriver driver;
+
+	 public void autoITTest() throws InterruptedException, IOException {
+
+         System.setProperty("webdriver.chrome.driver", "./WebDriver/chromedriver.exe");
+
+         driver = new ChromeDriver();
+
+         driver.manage().window().maximize();
+
+         driver.get("https://imgbb.com/");
+
+         Thread.sleep(4000);
+
+         WebElement btnStartUpload = driver.findElement(By.xpath("//a[@class='btn btn-big blue']"));
+
+         btnStartUpload.click();
+
+         Thread.sleep(2000);
+
+         Runtime.getRuntime().exec("./autoitexe/autoitfileupload.exe");
+
+         Thread.sleep(6000);
+
+         WebElement btnUpload = driver.findElement(By.xpath("//button[@class='btn btn-big green']"));
+
+         btnUpload.click();
+
+         Thread.sleep(5000);
+
+    }
+
+   }
+		// TODO Auto-generated method stub
+
+	
+
+
